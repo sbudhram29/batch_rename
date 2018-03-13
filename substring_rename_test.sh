@@ -6,6 +6,6 @@
 for i in *.$1
 do
   newName=$(echo $i | cut -d'_' -f $2);
-  mv "$i" "$newName".$1;
+  echo "$i" "$newName".$1;
 done
 
